@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/singleblog.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body>
+    <%- include("nav") %>
+
+    <div class="container">
+      <div id="blog">
+        <div>
+
+          <span class="outer">
+            <img id="img" src="<%= singleBlog.image %>" alt="" />
+          </span>
+          
+          <h3 id="title"><%= singleBlog.title %></h3>
+
+          <span id="category"><%= singleBlog.category %></span>
+
+          <p id="content" style="text-align: justify">
+            <%= singleBlog.content %>
+          </p>
+          <div style="display: flex; align-items: center">
+            <button id="like">Like</button>
+            <span id="count" style="font-size: 20px; margin-left: 5px;">0</span>
+            <form action="/blog" id="comment">
+              <input type="text" id="text" placeholder="Add a comment" style="border: #E5E7EB solid 1px;" />
+              <button id="submit">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/js/singleblog.js"></script>
+</html>

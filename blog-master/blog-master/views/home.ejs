@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/home.css">
+  <style>
+  </style>
+
+</head>
+<body>
+  <body>
+    <!-- header -->
+   <%- include('nav') %>
+
+   <div class="catnev" style="border-bottom: 1px solid 
+   #ddd;">
+     <div class="container">
+      <nav class="category flex" style="align-items: center; justify-content: center;">
+        <a id="technology" class="px-[10px] " style="border-right: 1px solid #ddd;">Technology</a>
+        <a class="px-[10px]" id="sports" style="border-right: 1px solid #ddd;" >Sports</a>
+        <a class="px-[10px]" id="health" style="border-right: 1px solid #ddd;" >Health</a>
+        <a class="px-[10px]" id="travel" style="border-right: 1px solid #ddd;" >Travel</a>
+        <a class="px-[10px]" id="lifestyle" >Lifestyle</a>
+        <div class="dot"></div>
+      </nav>
+     </div>
+   </div>
+    <div class="container">
+      <div id="parent-box"></div>
+    </div>
+
+    
+</body>
+
+<script src="/js/home.js"></script>
+</html>

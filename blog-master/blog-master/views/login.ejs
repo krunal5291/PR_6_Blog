@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header -->
+    <%- include('nav') %>
+    <!-- form -->
+    <center>
+        <form action="/user/login" method="post" id="form" class="mt-[10px]">
+
+            <input type="email" name="email"  class="border p-[5px]" placeholder="email" id="email" required ><br><br>
+
+            <input type="text" name="password" class="border p-[5px]"  placeholder="password" id="password" required ><br><br>
+
+            <input type="submit" value="login" id="sub">
+        </form>
+    </center>
+</body>
+</html>
